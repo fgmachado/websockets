@@ -1,0 +1,10 @@
+version: "3"
+services:
+  mysql:
+    image: "rethinkdb:latest"
+    hostname: "rethinkdb"
+    container_name: "rethinkdb"
+    ports:
+      - "28015:28015"
+      - "29015:29015"
+      - "8080:8080"
